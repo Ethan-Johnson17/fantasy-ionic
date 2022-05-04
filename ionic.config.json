@@ -1,0 +1,7 @@
+{
+  "name": "FantasyIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
