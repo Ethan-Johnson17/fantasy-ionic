@@ -16,10 +16,14 @@ export class AppComponent implements OnInit {
   ];
 
   public teamSubpages = [
+    { title: 'Overview', url: '/my-team/overview', icon: 'american-football' },
     { title: 'Roster', url: '/my-team/roster', icon: 'people' },
+    { title: 'Add Players', url: '/my-team/find-players', icon: 'person-add' },
+    { title: 'Schedule', url: '/my-team/schedule', icon: 'calendar' },
   ];
   public partySubpages = [
-    { title: 'Roster', url: '/my-team/roster', icon: 'people' },
+    { title: 'Overview', url: '/my-party/overview', icon: 'color-wand' },
+    { title: 'Characters', url: '/my-party/characters', icon: 'people' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   public route: string;
@@ -29,8 +33,9 @@ export class AppComponent implements OnInit {
     private readonly router: Router
   ) {}
 
-  ngOnInit(): void {
-    this.route = this.router.routerState.snapshot.url;
-    console.log(this.route);
+  ngOnInit(): void {}
+
+  setRoute(route: string) {
+    this.route = route;
   }
 }

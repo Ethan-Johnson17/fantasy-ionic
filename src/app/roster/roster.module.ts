@@ -5,9 +5,14 @@ import { FindPlayersPageComponent } from './pages/find-players-page/find-players
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
+import { PlayersComponent } from './components/players/players.component';
 
 @NgModule({
-  declarations: [MyTeamPageComponent, FindPlayersPageComponent],
+  declarations: [
+    MyTeamPageComponent,
+    FindPlayersPageComponent,
+    PlayersComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,
