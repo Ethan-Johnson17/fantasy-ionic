@@ -7,10 +7,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   public appPages = [
+    { title: 'Home', url: '/home', icon: 'home' },
     { title: 'My Team', url: '/my-team/overview', icon: 'american-football' },
     { title: 'My Party', url: '/my-party/overview', icon: 'color-wand' },
     { title: 'League', url: '/folder/Favorites', icon: 'people' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
