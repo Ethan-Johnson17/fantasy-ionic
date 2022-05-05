@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 import { MyTeamPageComponent } from './pages/my-team-page/my-team-page.component';
 import { FindPlayersPageComponent } from './pages/find-players-page/find-players-page.component';
 import { RouterModule } from '@angular/router';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [],
+  declarations: [MyTeamPageComponent, FindPlayersPageComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    IonicModule,
     RouterModule.forChild([
       {
         path: 'overview',

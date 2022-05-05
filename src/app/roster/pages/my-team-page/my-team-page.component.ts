@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-my-team',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-team-page.component.scss'],
 })
 export class MyTeamPageComponent implements OnInit {
-  constructor() {}
+  public folder: string;
 
-  ngOnInit() {}
+  constructor(private activatedRoute: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+  }
 }

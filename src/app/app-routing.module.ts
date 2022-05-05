@@ -17,6 +17,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./roster/roster.module').then((m) => m.RosterModule),
   },
+  {
+    path: 'my-party',
+    loadChildren: () =>
+      import('./party/party.module').then((m) => m.PartyModule),
+  },
 ];
 
 @NgModule({
